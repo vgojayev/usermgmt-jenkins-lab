@@ -15,7 +15,7 @@ pipeline {
                 stage('Checkout') {
                         steps {
                         checkout([$class: 'GitSCM',
-                                        branches: [[name: 'master']],
+                                        branches: [[name: 'main']],
                                         extensions: [[$class: 'WipeWorkspace']],
                                         userRemoteConfigs: [[url: 'https://github.com/vgojayev/usermgmt-jenkins-lab.git']]
                         
