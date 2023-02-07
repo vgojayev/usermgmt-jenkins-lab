@@ -37,6 +37,7 @@ pipeline {
 
                 stage('Build') {
                         steps {
+                        sh "java-gradle-sonarqube-userapp"
                         sh "gradle build"
                 }
                 }
